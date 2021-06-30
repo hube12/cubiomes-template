@@ -51,7 +51,8 @@ To install that one, download the executable (https://www.cygwin.com/setup-x86_6
 click next, next (from internet), next (C:\cygwin64), next (don't touch local),
 next (use proxy settings), select a mirror (cygwin.mirror.constant.com for example) next.
 Now on the View menu select Full, then in the search type `gcc-g++` and select `gcc-g++` in
-the list (click on skip and select latest non Test version 10.2.XX as of right now), type in
+the list (click on skip and select latest non Test version 10.2.XX as of right now),type 
+in search bar `make` then install `make` (scroll down)  and finally type in
 search bar `cmake` then install `cmake` the same way (my version is 3.20.XXX).
 
 
