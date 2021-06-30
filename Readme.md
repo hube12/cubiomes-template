@@ -66,7 +66,7 @@ this should print a number and not an error, if not then something is wrong.
 ### Clone the project
 Install git if you don't have it: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ```shell
-git clone --recurse-submodules https://github.com/hube12/cubiomes-templates
+git clone --recurse-submodules https://github.com/hube12/cubiomes-template
 ```
 
 ### Test the config
