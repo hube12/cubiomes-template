@@ -2,24 +2,22 @@
 #include "finders.h"
 #include <cstdio>
 
-int main()
-{
+int main() {
     // Initialize a stack of biome layers that reflects the biome generation of
     // Minecraft 1.16
-    LayerStack g;
-    setupGenerator(&g, MC_1_16);
+    Generator g;
+    setupGenerator(&g, MC_1_16, 0);
 
     int64_t seed;
-    Pos pos = {0,0}; // block position to be checked
+    Pos3 pos = {0, 0, 0}; // block position to be checked
 
-    for (seed = 0; ; seed++)
-    {
+    for (seed = 0;; seed++) {
         // Go through the layers in the layer stack and initialize the seed
         // dependent aspects of the generator.
-        applySeed(&g, seed);
+        applySeed(&g, DIM_OVERWORLD, seed);
 
         // To get the biome at single block position we can use getBiomeAtPos().
-        int biomeID = getBiomeAtPos(&g, pos);
+        int biomeID = getBiomeAt(&g, 1, pos.x, pos.y, pos.z);
         if (biomeID == jungle_edge)
             break;
     }

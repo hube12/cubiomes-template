@@ -5,13 +5,18 @@ list(APPEND CUBIOMES_PUBLIC_HEADERS
         "${CUBIOMES_SRC_DIR}/javarnd.h"
         "${CUBIOMES_SRC_DIR}/generator.h"
         "${CUBIOMES_SRC_DIR}/layers.h"
+        "${CUBIOMES_SRC_DIR}/quadbase.h"
         "${CUBIOMES_SRC_DIR}/finders.h"
         "${CUBIOMES_SRC_DIR}/util.h"
+        "${CUBIOMES_SRC_DIR}/noise.h"
         )
 
 
 list(APPEND CUBIOMES_SOURCES
         "${CUBIOMES_SRC_DIR}/finders.c"
+        "${CUBIOMES_SRC_DIR}/noise.c"
+        "${CUBIOMES_SRC_DIR}/quadbase.c"
+        "${CUBIOMES_SRC_DIR}/biome_tree.c"
         "${CUBIOMES_SRC_DIR}/layers.c"
         "${CUBIOMES_SRC_DIR}/util.c"
         "${CUBIOMES_SRC_DIR}/generator.c"
